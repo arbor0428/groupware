@@ -1,0 +1,193 @@
+
+/*견적서*/
+.bold {
+  font-weight: 700;
+}
+.bill {
+  width: 100%;
+  background-color: #fff;
+  max-width: 1200px;
+  margin: 80px auto;
+}
+.bill input[type="text"] {
+  border: none;
+}
+.bill input[type="text"]:focus {
+  outline: none;
+  border-bottom: 1px solid #333;
+}
+.bill_title {
+  width: 100%;
+  background-color: #fff;
+  margin-bottom: 80px;
+  display: flex;
+  justify-content: center;
+}
+.bill_title input[type="text"] {
+  width: 100%;
+  text-align: center;
+  color: #000;
+  font-size: 50px;
+}
+.bill_title input[type="text"]::placeholder {
+  color: #ddd;
+}
+.bill .bill_logo {
+  width: 120px;
+}
+.bill_top_content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.bill_top_content table {
+  width: calc(50% - 20px);
+  border-collapse: collapse;
+  border-bottom: 2px solid #796c98;
+  border-top: 2px solid #796c98;
+}
+.bill_bottom_content table{
+    table-layout: fixed;
+}
+
+.bill_top_content table tr,
+.bill_bottom_content table tr {
+  border-top: 1px solid #f6f6f6;
+}
+.bill_top_content table tr:first-child,
+.bill_bottom_content table tr:first-child {
+  border-top: none;
+}
+.bill_top_content table td {
+  padding: 20px 10px;
+  box-sizing: border-box;
+}
+.bill_bottom_content table td {
+  padding: 20px 0;
+  box-sizing: border-box;
+}
+.bill_top_content table th,
+.bill_bottom_content table th {
+  background-color: #e2e8f4;
+  padding: 20px 10px;
+  box-sizing: border-box;
+}
+.bill_bottom_content {
+  width: 100%;
+  margin-top: 80px;
+}
+.bill_bottom_content table {
+  width: 100%;
+  border-collapse: collapse;
+  border-top: 2px solid #796c98;
+  border-bottom: 2px solid #796c98;
+}
+.bill_bottom_content table td {
+  text-align: center;
+}
+.bill_bottom_content input[type="text"] {
+	width: 100%;
+  border-bottom: none;
+  font-size: 16px;
+  text-align: center;
+}
+.bill_bottom_content textarea {
+  width: 100%;
+  border: none;
+  overflow-y: hidden;
+  resize: none;
+  font-size: 16px;
+  word-break: keep-all;
+  text-align: left;
+}
+.bill_bottom_content textarea:focus {
+  outline: none;
+  border-bottom: 1px solid #ddd;
+}
+.bill_pay {
+  margin-left: auto;
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+  gap: 20px;
+}
+.bill_total,
+.bill_custom {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  font-size: 30px;
+}
+.bill_total input[type="text"],
+.bill_custom input[type="text"] {
+  border: none;
+
+  font-size: 30px;
+}
+.bill_select_wrap {
+  width: 100%;
+  margin: 50px 0;
+}
+
+.bill_select_wrap select {
+  width: 150px;
+  height: 35px;
+  box-sizing: border-box;
+  padding: 5px 25px 5px 5px; /* 여백으로 높이 설정 */
+  font-family: inherit; /* 폰트 상속 */
+  background: url("/new/images/sel-arrow.png") no-repeat 90% 50%; /* 네이티브 화살표를 커스텀 화살표로 대체 */
+  background-size: 10px;
+  border: 1px solid #bbb;
+  border-radius: 0px; /* iOS 둥근모서리 제거 */
+  -webkit-appearance: none; /* 네이티브 외형 감추기 */
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+}
+.bill_select_wrap select:focus {
+  outline: none;
+}
+.row_add_wrap {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+}
+.row_add_wrap button {
+  border: 1px solid #ddd;
+  background-color: #e2e8f4;
+  border-radius: 4px;
+  padding: 5px 10px;
+  margin-bottom: 20px;
+}
+#default_tbl,
+#design_tbl,
+#program_tbl,
+#service_tbl {
+  border-top: none;
+}
+#default_tbl tr,
+#design_tbl tr,
+#program_tbl tr,
+#service_tbl tr {
+	position: relative;
+  border-bottom: none;
+  border-top: none;
+}
+button.remove {
+  position: absolute;
+	right: -100px;
+	border: 1px solid #ddd;
+	background-color: #e2e8f4;
+	border-radius: 4px;
+	padding: 5px 10px;
+	margin-bottom: 20px;
+
+}
+#bill_total_input,
+#proposal_bill_input {
+  text-align: right;
+}

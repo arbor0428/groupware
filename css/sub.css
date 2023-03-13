@@ -1,0 +1,85 @@
+.wrap {
+    width: calc(100% - 250px);
+    min-height: 100vh;
+    padding-bottom: 20px;
+    margin-left: auto;
+    background-color: #f2f2f2;
+}
+/*전자결재 index*/
+.approval_container {
+	width: calc(100% - 350px);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 15px 20px;
+	box-sizing: border-box;
+	gap: 20px;
+}
+.approval_container .list-wrap {	
+	width: 50%;
+	text-align: center;
+}
+.approval_container .list-title {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 2rem;
+	font-weight: 700;
+	margin: 50px 0px 15px 0px;
+}
+.approval_container .btn-wrap {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap:20px;
+}
+.approval_container .btn-wrap > a {
+	width: calc(33.33% - 14px);
+	aspect-ratio: 2/1;
+}
+.approval_container .list-btn {
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 20px;
+	padding: 10px;
+	text-align: center;
+	font-size: 16px;
+	color: #000;
+	cursor: pointer;
+}
+.approval_container .list-btn:hover {
+	background-color: #c4c4c4;
+	font-weight: 700;
+}
+.approval_container .color-person {
+	background-color: #3766D5;
+	color: #fff;
+}
+.approval_container .color-person:hover {
+	background-color: #4173e7;
+}
+.approval_container .finance {
+	background-color: #0AB380;
+	color: #fff;
+}
+.approval_container .finance:hover {
+	background-color: #0fc790;
+}
+.approval_container .deactivation {
+	background-color: #d4d3d3;
+}
+.approval_container .list-title-text {
+	color: #000;
+	font-size: 2rem;
+}
+.approval_container .work {
+	background-color: #F7CC3B;
+	color: #fff;
+}
+.approval_container .work:hover {
+	background-color: #f7d568;
+}
